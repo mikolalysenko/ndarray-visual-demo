@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ndarray visual demo</title>
+<style>
+.left {
+  float: left;
+}
+.middle {
+  float: left;
+}
+.right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="left">
+  <h2>Image:</h2>
+  <canvas id="dataImage"></canvas>
+</div>
+
+<div class="middle">
+  <h2>Slice:</h2>
+  <canvas id="sliceImage"></canvas>
+</div>
+
+<div class="right">
+  <h2>Slice properties:</h2>
+  <p>Shape: <div id="arrayShape"></div></p>
+  <p>Stride: <div id="arrayStride"></div></p>
+  <p>Offset: <div id="arrayOffset"></div></p>
+
+  <div>
+  <h2>Slice:</h2>
+<textarea id="arraySlice">
+array.lo(222,215).hi(40,40)
+</textarea>
+  </div>
+</div>
+
+<script src="bundle.js" type="text/javascript"></script>
+
+</body>
+</html>
